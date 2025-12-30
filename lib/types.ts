@@ -63,6 +63,7 @@ export interface DashboardMetrics {
 }
 
 export interface VisaDataset extends DataSourceInfo {
+  year?: number;
   metrics: DashboardMetrics;
   countries: CountryData[];
   states: StateData[];
