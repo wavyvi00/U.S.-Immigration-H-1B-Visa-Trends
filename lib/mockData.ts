@@ -141,7 +141,7 @@ export const generateMockDataset = (year: number = 2024): VisaDataset => {
     const ytdVisas = Math.round(totalVisas * 0.75); // Simulating 75% of year completed
 
     return {
-        year,
+        source: 'mock',
         countries,
         states: generateStateData(year),
         timeSeries: generateTimeSeries(),
