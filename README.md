@@ -40,7 +40,7 @@ The application features a robust streaming data pipeline to handle massive gove
 ### Manual Data Update
 To manually trigger a data update (requires `CRON_SECRET`):
 ```bash
-curl -H "Authorization: Bearer h1b_data_update_secret_2024" http://localhost:3000/api/cron/update-h1b-data
+curl -H "Authorization: Bearer YOUR_CRON_SECRET" http://localhost:3000/api/cron/update-h1b-data
 ```
 
 ## Deployment
