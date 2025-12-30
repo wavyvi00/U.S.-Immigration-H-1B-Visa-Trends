@@ -1,0 +1,266 @@
+{
+  "year": 2022,
+  "totalApprovals": 105210,
+  "totalDenials": 2646,
+  "totalRecords": 118645,
+  "approvalRate": 97.54672897196261,
+  "topCountries": [
+    {
+      "countryName": "USA",
+      "countryCode": "US",
+      "visaCount": 105194,
+      "percentage": 99.98479232012166
+    },
+    {
+      "countryName": "GEORGIA",
+      "countryCode": "XX",
+      "visaCount": 13,
+      "percentage": 0.012356239901150081
+    },
+    {
+      "countryName": "AUSTRALIA",
+      "countryCode": "XX",
+      "visaCount": 1,
+      "percentage": 0.0009504799923961601
+    },
+    {
+      "countryName": "United Kingdom",
+      "countryCode": "GB",
+      "visaCount": 1,
+      "percentage": 0.0009504799923961601
+    },
+    {
+      "countryName": "BAHAMAS",
+      "countryCode": "XX",
+      "visaCount": 1,
+      "percentage": 0.0009504799923961601
+    }
+  ],
+  "topStates": [
+    {
+      "stateName": "CA",
+      "stateCode": "CA",
+      "visaCount": 20983,
+      "percentage": 19.943921680448625
+    },
+    {
+      "stateName": "TX",
+      "stateCode": "TX",
+      "visaCount": 11649,
+      "percentage": 11.07214143142287
+    },
+    {
+      "stateName": "NJ",
+      "stateCode": "NJ",
+      "visaCount": 10375,
+      "percentage": 9.86122992111016
+    },
+    {
+      "stateName": "WA",
+      "stateCode": "WA",
+      "visaCount": 7989,
+      "percentage": 7.593384659252924
+    },
+    {
+      "stateName": "NY",
+      "stateCode": "NY",
+      "visaCount": 7578,
+      "percentage": 7.202737382378101
+    },
+    {
+      "stateName": "IL",
+      "stateCode": "IL",
+      "visaCount": 5645,
+      "percentage": 5.365459557076323
+    },
+    {
+      "stateName": "MA",
+      "stateCode": "MA",
+      "visaCount": 4093,
+      "percentage": 3.8903146088774836
+    },
+    {
+      "stateName": "PA",
+      "stateCode": "PA",
+      "visaCount": 3960,
+      "percentage": 3.7639007698887936
+    },
+    {
+      "stateName": "VA",
+      "stateCode": "VA",
+      "visaCount": 3402,
+      "percentage": 3.2335329341317367
+    },
+    {
+      "stateName": "MD",
+      "stateCode": "MD",
+      "visaCount": 3247,
+      "percentage": 3.0862085353103317
+    },
+    {
+      "stateName": "MI",
+      "stateCode": "MI",
+      "visaCount": 3011,
+      "percentage": 2.861895257104838
+    },
+    {
+      "stateName": "GA",
+      "stateCode": "GA",
+      "visaCount": 2515,
+      "percentage": 2.390457180876343
+    },
+    {
+      "stateName": "FL",
+      "stateCode": "FL",
+      "visaCount": 2512,
+      "percentage": 2.3876057408991542
+    },
+    {
+      "stateName": "NC",
+      "stateCode": "NC",
+      "visaCount": 2414,
+      "percentage": 2.2944587016443303
+    },
+    {
+      "stateName": "OH",
+      "stateCode": "OH",
+      "visaCount": 1526,
+      "percentage": 1.4504324683965402
+    },
+    {
+      "stateName": "MN",
+      "stateCode": "MN",
+      "visaCount": 1284,
+      "percentage": 1.2204163102366696
+    },
+    {
+      "stateName": "TN",
+      "stateCode": "TN",
+      "visaCount": 1166,
+      "percentage": 1.1082596711339225
+    },
+    {
+      "stateName": "MO",
+      "stateCode": "MO",
+      "visaCount": 1131,
+      "percentage": 1.0749928714000572
+    },
+    {
+      "stateName": "AZ",
+      "stateCode": "AZ",
+      "visaCount": 1012,
+      "percentage": 0.961885752304914
+    },
+    {
+      "stateName": "AR",
+      "stateCode": "AR",
+      "visaCount": 1001,
+      "percentage": 0.9514304723885562
+    }
+  ],
+  "topEmployers": [
+    {
+      "employerName": "COGNIZANT TECHNOLOGY SOLUTIONS US CORP",
+      "visaCount": 2981,
+      "approvalRate": 100
+    },
+    {
+      "employerName": "Amazon.com Services LLC",
+      "visaCount": 2744,
+      "approvalRate": 100
+    },
+    {
+      "employerName": "Microsoft Corporation",
+      "visaCount": 2126,
+      "approvalRate": 100
+    },
+    {
+      "employerName": "Ernst & Young U.S. LLP",
+      "visaCount": 1804,
+      "approvalRate": 100
+    },
+    {
+      "employerName": "Google LLC",
+      "visaCount": 1395,
+      "approvalRate": 100
+    },
+    {
+      "employerName": "INFOSYS LIMITED",
+      "visaCount": 1377,
+      "approvalRate": 100
+    },
+    {
+      "employerName": "Tata Consultancy Services Limited",
+      "visaCount": 1164,
+      "approvalRate": 100
+    },
+    {
+      "employerName": "Apple Inc.",
+      "visaCount": 1082,
+      "approvalRate": 100
+    },
+    {
+      "employerName": "Amazon Web Services, Inc.",
+      "visaCount": 895,
+      "approvalRate": 100
+    },
+    {
+      "employerName": "TATA CONSULTANCY SERVICES LIMITED",
+      "visaCount": 879,
+      "approvalRate": 100
+    },
+    {
+      "employerName": "WAL-MART ASSOCIATES, INC.",
+      "visaCount": 742,
+      "approvalRate": 100
+    },
+    {
+      "employerName": "Deloitte Consulting LLP",
+      "visaCount": 710,
+      "approvalRate": 100
+    },
+    {
+      "employerName": "HCL AMERICA, INC.",
+      "visaCount": 685,
+      "approvalRate": 100
+    },
+    {
+      "employerName": "Intel Corporation ",
+      "visaCount": 676,
+      "approvalRate": 100
+    },
+    {
+      "employerName": "JPMORGAN CHASE & CO.",
+      "visaCount": 673,
+      "approvalRate": 100
+    },
+    {
+      "employerName": "CAPGEMINI AMERICA INC",
+      "visaCount": 585,
+      "approvalRate": 100
+    },
+    {
+      "employerName": "Meta Platforms, Inc.",
+      "visaCount": 573,
+      "approvalRate": 100
+    },
+    {
+      "employerName": "Qualcomm Technologies, Inc.",
+      "visaCount": 536,
+      "approvalRate": 100
+    },
+    {
+      "employerName": "COMPUNNEL SOFTWARE GROUP, INC",
+      "visaCount": 492,
+      "approvalRate": 100
+    },
+    {
+      "employerName": "Accenture LLP",
+      "visaCount": 489,
+      "approvalRate": 100
+    }
+  ],
+  "lastUpdated": "2025-12-30T17:08:49.536Z",
+  "dataSource": "DOL OFLC - LCA Disclosure Data",
+  "isRealData": true
+}

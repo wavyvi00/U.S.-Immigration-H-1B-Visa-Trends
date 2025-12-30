@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# H-1B Visa Data Dashboard
+
+A real-time analytics dashboard for U.S. H-1B visa applications, visualizing data from USCIS and Department of Labor (DOL) OFLC disclosures. Built with Next.js 15, Tailwind CSS, and Recharts.
+
+## Features
+
+- **Real-time Data**: automatically streams and processes widespread Department of Labor (DOL) Excel files.
+- **Interactive Visualizations**:
+  - **Geographic Distribution**: Heatmap of filings by country.
+  - **Top Employers**: Ranked list of companies sponsoring visas.
+  - **Trend Analysis**: Visa approval rates and volume over time.
+- **Fiscal Year Filtering**: Explore historical data from FY 2021 to present.
 
 ## Getting Started
 
-First, run the development server:
+1. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
 
+2. **Run Development Server**:
+   ```bash
+   npm run dev
+   ```
+
+3. **Open Dashboard**:
+   Visit [http://localhost:3000](http://localhost:3000)
+
+## Data Pipeline
+
+The application features a robust streaming data pipeline to handle massive government datasets (80MB+ Excel files) without crashing Node.js memory.
+
+- **Source**: Department of Labor (DOL) Office of Foreign Labor Certification (OFLC)
+- **Mechanism**:
+  1. **Cron Job**: Daily/Weekly check via `/api/cron/update-h1b-data`
+  2. **Streaming Download**: Uses system `curl` to fetch large files
+  3. **Stream Parsing**: Uses `exceljs.stream.xlsx.WorkbookReader` to process row-by-row
+  4. **Aggregation**: summarize stats into lightweight JSON files for the frontend
+
+### Manual Data Update
+To manually trigger a data update (requires `CRON_SECRET`):
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+curl -H "Authorization: Bearer h1b_data_update_secret_2024" http://localhost:3000/api/cron/update-h1b-data
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Deployment
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Deploy easily on Vercel:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Push to GitHub
+2. Import project in Vercel
+3. Add Environment Variable:
+   - `CRON_SECRET`: A secure random string for protecting the update route
+4. Deploy!
 
-## Learn More
+## Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+- **Framework**: Next.js 15 (App Router)
+- **Styling**: Tailwind CSS
+- **Charts**: Recharts
+- **Icons**: Lucide React
+- **Maps**: React Simple Maps
+- **Data Processing**: ExcelJS (Streaming)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT
